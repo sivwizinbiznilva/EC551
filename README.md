@@ -34,25 +34,25 @@ The script requires the following directory structure:
 - Create a separate folder (\Sources\hdl\rm1, \Sources\hdl\rm2, \Sources\hdl\top, etc.) for each reconfigurable module as well as a separate folder for your top level module.
 
 *\Sources\xdc*
-- Place your .xdc file here
+- Place your `.xdc` file here
 
 *\Synth*
 - This folder will contain all post-synthesis checkpoints
 
 *\Tcl*
 - This folder should contain all subscripts invoked by `design_complete.tcl`. **DO NOT MODIFY THESE SCRIPTS UNLESS YOU REALLY KNOW WHAT YOU'RE DOING!!** These scripts include:
-  -`design_utils.tcl`
-  -`eco_utils.tcl`
-  -`hd_floorplan_utils.tcl`
-  -`impl.tcl`
-  -`impl_utils.tcl`
-  -`log.tcl`
-  -`ooc_impl.tcl`
-  -`pr_impl.tcl`
-  -`run.tcl`
-  -`step.tcl`
-  -`synth.tcl`
-  -`synth_utils.tcl`
+  -design_utils.tcl
+  -eco_utils.tcl
+  -hd_floorplan_utils.tcl
+  -impl.tcl
+  -impl_utils.tcl
+  -log.tcl
+  -ooc_impl.tcl
+  -pr_impl.tcl
+  -run.tcl
+  -step.tcl
+  -synth.tcl
+  -synth_utils.tcl
 
 ####Invoking the Script
 To run the script simply `cd` into the project directory where the `design_complete.tcl` script is located. Run the following commands
