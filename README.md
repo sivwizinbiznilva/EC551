@@ -9,7 +9,7 @@ The user of this script is responsible for generating Verilog modules for:
 
 The user must also have an idea of how large the above modules are (i.e., what is the FPGA footprint) in order to create appropriately-sized Reconfigurable Partitions (RP). These sizes are reflected in the `.xdc` file.
 
-##design_complete.tcl
+##`design_complete.tcl`
 This script was designed in accordance with Xilinx User's Guide 947: Partial Reconfiguration for Vivado
 
 ####Requirements:
@@ -40,22 +40,22 @@ The script requires the following directory structure:
 - This folder will contain all post-synthesis checkpoints
 
 *\Tcl*
-- This folder should contain all subscripts invoked by design_complete.tcl. **DO NOT MODIFY THESE SCRIPTS UNLESS YOU REALLY KNOW WHAT YOU'RE DOING!!** These scripts include:
-  -design_utils.tcl
-  -eco_utils.tcl
-  -hd_floorplan_utils.tcl
-  -impl.tcl
-  -impl_utils.tcl
-  -log.tcl
-  -ooc_impl.tcl
-  -pr_impl.tcl
-  -run.tcl
-  -step.tcl
-  -synth.tcl
-  -synth_utils.tcl
+- This folder should contain all subscripts invoked by `design_complete.tcl`. **DO NOT MODIFY THESE SCRIPTS UNLESS YOU REALLY KNOW WHAT YOU'RE DOING!!** These scripts include:
+  -`design_utils.tcl`
+  -`eco_utils.tcl`
+  -`hd_floorplan_utils.tcl`
+  -`impl.tcl`
+  -`impl_utils.tcl`
+  -`log.tcl`
+  -`ooc_impl.tcl`
+  -`pr_impl.tcl`
+  -`run.tcl`
+  -`step.tcl`
+  -`synth.tcl`
+  -`synth_utils.tcl`
 
 ####Invoking the Script
-To run the script simply `cd` into the project directory where the design_complete.tcl script is located. Run the following commands
+To run the script simply `cd` into the project directory where the `design_complete.tcl` script is located. Run the following commands
 
 ```
 $ vivado -mode tcl
@@ -63,3 +63,6 @@ $ vivado -mode tcl
 ```
 
 The above two commands will go complete the entire process from RP definition, synthesis, out of order synthesis of RMs, P&R to bitstream generation.
+
+# LCD Displaying Color Data
+The `\build.srcs` folder contains all source code implementing a data parser for the RGB color sensor and displaying the parsed data on an LCD (Digilent PModCLS).
